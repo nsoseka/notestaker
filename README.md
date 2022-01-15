@@ -1,24 +1,14 @@
-# README
+# To run the application, follow the instructions bellow
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Make sure that you have ruby '3.0.0' and Rails 6 installed
 
-Things you may want to cover:
+* Git clone this repo
 
-* Ruby version
+* Run `bundle install`
 
-* System dependencies
+* Run `bin/setup` to setup databases(Must have postgres installed)
 
-* Configuration
+* Run `yarn install` to install JS dependencies
 
-* Database creation
+* Run `bin/rails s` and you are good to go
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

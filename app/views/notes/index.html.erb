@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+<div class="mt-10 divide-y divide-gray-200 max-w-2xl mx-auto">
+  <div class="space-y-1">
+    <h3 class="text-lg leading-6 font-medium text-gray-900">
+      Notes
+    </h3>
+  </div>
+  <div class="mt-6">
+    <dl class="divide-y divide-gray-200">
+      <% @notes.each do |note| %>
+        <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-b sm:border-gray-200">
+          <dt class="text-sm font-medium text-gray-500">
+            <%= note.description %>
+          </dt>
+          <dd class="mt-1 flex text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+            <span class="flex-grow"><%= note.goal_type %></span>
+            <span class="ml-4 flex-shrink-0">
+              <%= link_to note_path(note) do %>
+              <button type="button" class="bg-white rounded-md font-medium text-gray-600 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                Show
+              </button>
+              <% end %>
+            </span>
+
+            <span class="ml-4 flex-shrink-0">
+              <%= link_to edit_note_path(note) do %>
+              <button type="button" class="bg-white rounded-md font-medium text-gray-600 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                Edit
+              </button>
+              <% end %>
+            </span>
+          </dd>
+        </div>
+      <% end %>
+    </dl>
+  </div>
+</div>
+

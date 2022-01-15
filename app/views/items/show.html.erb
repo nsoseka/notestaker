@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @item.name %>
+</p>
+
+<p>
+  <strong>Evaluation:</strong>
+  <%= @item.evaluation %>
+</p>
+
+<p>
+  <strong>Prompting:</strong>
+  <%= @item.prompting %>
+</p>
+
+<p>
+  <strong>Errors made:</strong>
+  <%= @item.errors_made %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @item.note_id %>
+</p>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

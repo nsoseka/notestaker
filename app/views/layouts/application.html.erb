@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notestaker</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_packs_with_chunks_tag 'application', 'hello_vue', media: 'all' %>
+    <%= javascript_packs_with_chunks_tag 'hello_vue', 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+  </head>
+
+  <body>
+    <div data-behaviour='vu'>
+      <nav class="bg-gray-900" aria-label="Global">
+        <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
+          <div class="flex justify-between h-16">
+            <div class="flex items-center px-2 lg:px-0">
+              <div class="lg:ml-8 lg:flex lg:space-x-4">
+                <%= link_to "Notes", notes_path, class: "rounded-md py-2 px-3 text-sm font-medium text-white hover:bg-gray-400" %>
+
+                <%= link_to "Add note", new_note_path, class: "rounded-md py-2 px-3 text-sm font-medium text-white hover:bg-gray-400" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main class="py-4">
+        <%= yield %>
+      </main>
+    </div>
+  </body>
+</html>

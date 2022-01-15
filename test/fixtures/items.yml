@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  evaluation: MyString
+  prompting: MyString
+  errors_made: MyString
+  note: one
+
+two:
+  name: MyString
+  evaluation: MyString
+  prompting: MyString
+  errors_made: MyString
+  note: two

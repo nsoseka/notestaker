@@ -1,4 +1,6 @@
-# To run the application, follow the instructions bellow
+## Application demo link [Note taker](https://sidekicknotestaker.herokuapp.com).
+
+## To run the application, follow the instructions bellow 
 
 * Make sure that you have ruby '3.0.0' and Rails 6 installed
 
